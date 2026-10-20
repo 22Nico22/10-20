@@ -1,0 +1,162 @@
+/* ---------- Alapok ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Az oldal 80% széles, oszlopos flex: nav, main (kitölti a helyet), footer legalul */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---------- Nav: a main felett, csak alsó border ---------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  border-bottom: 1px solid #000;
+}
+
+.logo-placeholder {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #000;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+/* ---------- Main ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 32px;
+  width: 100%;
+  margin: 32px 0;
+}
+
+/* Main-en belüli header: ugyanolyan széles, mint a második szekció */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 48px 32px;
+  border: 1px solid #000;
+}
+
+/* Második és harmadik szekció egymás mellett */
+.content-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+/* ---------- Második szekció: bal oldal, 6 kártya ---------- */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid #000;
+}
+
+/* Soronként 2 kártya */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex: 1 1 calc(50% - 12px);
+  max-width: calc(50% - 12px);
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #000;
+}
+
+/* Bal oldalon a kép keretben */
+.image-placeholder {
+  flex: 0 0 40%;
+  min-height: 140px;
+  border: 1px solid #000;
+}
+
+.image-placeholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Jobb oldalon a szöveg: cím fent, leírás középen, gomb legalul */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+}
+
+.card-content p {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.card-content a {
+  margin-top: auto;
+}
+
+/* ---------- Harmadik szekció: jobb oldal, 3 kártya egymás alatt ---------- */
+aside {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid #000;
+}
+
+.aside-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid #000;
+}
+
+/* ---------- Footer: legalul, teljes szélességben, kerettel ---------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+  padding: 24px 32px;
+  border: 1px solid #000;
+}
