@@ -132,6 +132,74 @@ main {
   margin-top: auto;
 }
 
+/* ---------- Űrlap ---------- */
+.urlap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mezo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mezo label {
+  font-weight: bold;
+}
+
+.mezo input,
+.mezo select,
+.mezo textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  font: inherit;
+}
+
+.mezo textarea {
+  resize: vertical;
+}
+
+.mezo input:focus,
+.mezo select:focus,
+.mezo textarea:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+.mezo-checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.mezo-checkbox input {
+  width: auto;
+}
+
+.mezo-checkbox label {
+  font-weight: normal;
+}
+
+.urlap button {
+  align-self: flex-start;
+  padding: 10px 32px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.urlap button:hover {
+  background: #fff;
+  color: #000;
+}
+
 /* ---------- Harmadik szekció: jobb oldal, 3 kártya egymás alatt ---------- */
 aside {
   display: flex;
